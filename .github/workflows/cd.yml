@@ -34,13 +34,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd front-end  # Navega para o diretório front-end
-          npm install  # Instala as dependências do front-end
+          cd front-end
+          npm install
 
       - name: Build the project
         run: |
-          cd front-end  # Garante que o build seja feito dentro do diretório front-end
-          npm run build  # Roda o build do front-end
+          cd front-end
+          npm run build
 
       - name: Deploy to Vercel
         env:
@@ -48,6 +48,6 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          cd front-end  # Garante que o deploy ocorra do diretório correto
+          cd front-end
           echo "Deploying to Vercel..."
           npx vercel --prod --token $VERCEL_TOKEN
