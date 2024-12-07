@@ -25,7 +25,7 @@ jobs:
         with:
           context: ./front-end
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/bingo-frontimage:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/imagebingofront:latest
 
   CD-DeployToVercel:
     runs-on: ubuntu-latest
