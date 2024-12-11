@@ -1,0 +1,14 @@
+services:
+  frontend:
+    image: myfrontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: myfrontend
+    ports:
+      - 80:80
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:

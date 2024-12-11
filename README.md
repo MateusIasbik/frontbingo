@@ -56,4 +56,5 @@ Sistema para a administração de jogos de bingo.
   - Rodar o front-end em um container docker `docker run -d --name bingo-frontend -p 8080:80 bingo-frontend`.
 
 ## Uso com Docker Compose
-- Subir os containers juntos com `docker compose up -d`.
+- Para o Back-end e para o Front-end:  
+  - Subir os containers juntos com `docker compose up -d`.
