@@ -58,3 +58,4 @@ Sistema para a administração de jogos de bingo.
 ## Uso com Docker Compose
 - Para o Back-end e para o Front-end:  
   - Subir os containers juntos com `docker compose up -d`.
+  
